@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>基础选择器之id选择器</title>
+
+        <!-- id选择器可以为标有特定id的HTML元素指定特定的样式 -->
+        <!-- HTML元素以id属性来设置id选择器，CSS中id选择器以“#”来定义 -->
+        <!-- id选择器一般用于页面唯一性的元素上，经常和js一起使用 -->
+        <style>
+            /* id选择器的口诀：样式#定义，结构id调用，只能调用，别人切勿使用 */
+
+            /* 语法
+            #id名 {                     "#"号不能忘
+                属性1：属性值1；
+            } */
+
+            #pink_id {
+                color: pink;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="pink_id">MK</div>
+        <div id="pink_id">KK</div>  
+        <!-- 这里能够使用是由于浏览器的兼容性，原则上不能第二次调用id选择器 -->
+    </body>
+</html>
